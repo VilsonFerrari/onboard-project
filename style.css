@@ -1,0 +1,56 @@
+* {
+    font-family: Arial;
+}
+
+body {
+    background-color: #333;
+}
+
+/* GENRES */
+#genres-content {
+    display: flex;
+    flex-direction: column;
+}
+
+#genre-list-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px 15px 15px;
+    line-height: 30px;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    #genres-content {
+        flex-direction: row;
+    }
+
+    #genre-list-wrapper {
+        justify-content: flex-start;
+        margin-bottom: 30px;
+    }   
+}
+
+
+/* GAMES */
+#game-list-total {
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-end;
+    margin: 30px 15px;
+}
+
+#game-list-total span {
+    color: white;
+}
+
+#game-list-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+fe-game-card {
+    max-width: 100%;
+}
